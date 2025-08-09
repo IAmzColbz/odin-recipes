@@ -1,9 +1,10 @@
 body {
-    margin: 40px auto;
+    background-color: beige;
+    margin: 20px auto;
     max-width: 650px;
     line-height: 1.5;
     font-size: 16px;
-    color: #444;
+    color: #280A3E;
     padding: 0 10px;
     font-family: "Verdana", sans-serif
 }
@@ -20,3 +21,34 @@ img {
     width: 100%;
     height: auto;
 }
+
+.card {
+    background-color: #F2EDD1;
+    padding: 8px;
+    border: 1px solid #280A3E;
+}
+
+.title-box {
+    background-color: #F9CB99;
+    padding: 4px;
+    text-align: center;
+    margin-bottom: 8px;
+    border: 1px solid #280A3E
+}
+
+.home-button a {
+    display: inline-block;
+    background-color: #F2EDD1;
+    padding: 2px;
+    text-decoration: double;
+    margin-left: 4px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+br {
+    border-bottom: 1px solid #280A3E;
+}
+
