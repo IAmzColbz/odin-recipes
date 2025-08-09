@@ -1,12 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #b8b8b8;
-    margin: 20px auto;
-    max-width: 650px;
     line-height: 1.5;
     font-size: 16px;
-    color: #444;
-    padding: 0 10px;
     font-family: "Verdana", sans-serif
+}
+
+.web-title {
+    background-color: #444;
+    display: flex;
+    justify-items: flex-start;
+    padding: 5px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.web-title-box {
+    padding-left: 20px;
+    color: #EEEEEE;
+    text-shadow: 2px 2px black;
 }
 
 h1,h2,h3 {
@@ -23,17 +40,78 @@ img {
 }
 
 .card {
+    max-width: 700px;
+    margin: auto;
     background-color: #EEEEEE;
     padding: 8px;
     border: 1px solid #444;
+    display: flex;
+    flex-direction: column;
 }
 
+.recipe-list,
 .title-box {
     background-color: #dedede;
     padding: 4px;
     text-align: center;
     margin-bottom: 8px;
     border: 1px solid #444
+}
+
+.recipe-list {
+    flex-direction: column;
+}
+
+.recipe-list-item {
+    position: relative; /* This is essential for the link to stretch within it */
+    display: flex;
+    align-items: center; 
+    margin-bottom: 12px;
+    border: 1px solid black;
+    padding: 8px; 
+    background-color: #fdfdfd;
+}
+
+/* Style the link and create the stretched pseudo-element */
+.recipe-item-descriptor a {
+    color: inherit; /* Makes the link inherit the parent's text color */
+    text-decoration: none; /* Removes the default underline */
+}
+
+/* This is the magic part */
+.recipe-item-descriptor a::after {
+    content: ''; /* A pseudo-element must have content */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.recipe-item-picture {
+    width: 150px;
+    height: 150px;
+    margin: 4px;
+}
+
+.recipe-item-descriptor {
+    flex: 1;
+    min-width: 0;
+}
+
+.recipe-item-descriptor h3 {
+    text-decoration: underline;
+    margin: 4px;
+}
+
+.recipe-item-descriptor p {
+    text-align: justify;
+    margin: 4px;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
 }
 
 .home-button a {
@@ -48,7 +126,4 @@ img {
     border-bottom: 0;
 }
 
-br {
-    border-bottom: 1px solid #444;
-}
 
