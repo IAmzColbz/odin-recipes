@@ -1,10 +1,10 @@
 body {
-    background-color: beige;
+    background-color: #b8b8b8;
     margin: 20px auto;
     max-width: 650px;
     line-height: 1.5;
     font-size: 16px;
-    color: #280A3E;
+    color: #444;
     padding: 0 10px;
     font-family: "Verdana", sans-serif
 }
@@ -23,22 +23,22 @@ img {
 }
 
 .card {
-    background-color: #F2EDD1;
+    background-color: #EEEEEE;
     padding: 8px;
-    border: 1px solid #280A3E;
+    border: 1px solid #444;
 }
 
 .title-box {
-    background-color: #F9CB99;
+    background-color: #dedede;
     padding: 4px;
     text-align: center;
     margin-bottom: 8px;
-    border: 1px solid #280A3E
+    border: 1px solid #444
 }
 
 .home-button a {
     display: inline-block;
-    background-color: #F2EDD1;
+    background-color: #EEEEEE;
     padding: 2px;
     text-decoration: double;
     margin-left: 4px;
@@ -49,6 +49,6 @@ img {
 }
 
 br {
-    border-bottom: 1px solid #280A3E;
+    border-bottom: 1px solid #444;
 }
 
